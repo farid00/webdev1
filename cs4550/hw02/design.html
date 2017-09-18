@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User First Design</title>
+</head>
+<body>
+	<h1>User First Design</h1>
+	<ul>
+		<li>
+			As a signed in user I should be able to see posts I am tagged in
+			<ul>
+				<li>To see posts that I am tagged in I login to the site and am brought to a new page.  This page shows all the posts that I am directly tagged in.  I can click on any of the posts to see who posted it and the rest of their posts.</li>
+			</ul>
+		</li>
+		<li>
+			As a signed in user I can post a "message".
+			<ul>
+				<li>In order to post a message I go to my profile.  In my profile there is a a form with a 140 character limit and a submit button.  Within the form I can tag other users or subjects.  Once I click the submit button it is posted to my profile and notifies those that I tagged.</li>
+			</ul>
+		</li>
+		<li>
+			As a signed in user I can change my password.
+			<ul>
+				<li>To change my password I go to my profile.  There is a button called settings beneath my profile picture.  Within settings there is a box to type in my current password and a new password.  I fill in the fields and hit submit.  My password is changed and i'm required to sign in again.</li>
+			</ul>
+		</li>
+		<li>
+			As a signed in user I can change my posts.
+			<ul>
+				<li>In order to change my post I click on an edit button that is on the post. It turns the text into a form and a submit button prefilled with the previous text.  I can change the text and hit submit.  Without refreshing the post is updated on my screen.</li>
+			</ul>
+		</li>
+		<li>
+			As a signed in user I can change my profile information
+			<ul>
+				<li>In order to change my profile information I click on the same settings button that allows me to change my password.  Once in the settings there is a form that holds all profile information that is prepopulated.  I can change the information and then hit the submit button to save the profile information.</li>
+			</ul>
+		</li>
+	</ul>
+	<h1>Data First Design</h1>
+	<ul>
+		<li>
+			User
+			<ul>
+				<li>Fields: Id, first_last, last_name, nickname, username/email, password, created_at, updated_at</li>
+				<li>Constraints: Unique username/email, encrypted password, unique Id </li>
+				<li>create: User profile page displaying all fields</li>
+				<li>show: User profile page displaying all fields</li>
+				<li>update: User profile </li>
+				<li>delete: Page affirming user that their account has been deleted</li>
+				<li>edit:  Form containing fields pertaining to user</li>
+				<li>new: Empty form to create a user</li>
+			</ul>
+		</li>
+		<li>
+			Post
+			<ul>
+				<li>Fields: Id, text, user_id, created_at, updated_at</li>
+				<li>Constraints: Unique Id, foreign key constraint on user_id pointing to User, text limited to 140 characters </li>
+				<li>create: A page  showing the new post and all its fields </li>
+				<li>show: A page  showing the new post and all its fields</li>
+				<li>update: A page  showing the updated post and all its fields </li>
+				<li>delete: Page affirming user that the post has been deleted</li>
+				<li>edit:  Form containing fields pertaining to the post</li>
+				<li>new: Empty form to create a new post</li>
+			</ul>
+			</ul>
+		</li>
+		<li></li>
+	</ul>
+
+	
+</body>
+</html>
